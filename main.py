@@ -1,7 +1,7 @@
 from setup import create_app, db
-from cfg.config import LocalMachineConfig
+from cfg.config import GcpConfig
 
-flask_app = create_app(config_cls=LocalMachineConfig)
+flask_app = create_app(config_cls=GcpConfig)
 
 
 def drop_db():
